@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/workspace/Kotlin/Curso/AndroidStudio/app/src/main/res/layout/activity_detail.xml" value="0.15625" />
         <entry key="..\:/workspace/Kotlin/Curso/AndroidStudio/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/workspace/Kotlin/Curso/AndroidStudio/app/src/main/res/layout/match_item.xml" value="0.22" />
       </map>

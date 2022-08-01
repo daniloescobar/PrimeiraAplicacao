@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PrimeiraAplicacao</string>
+    <string name="app_name">Match Simulator</string>
     <string name="cd_BotaoSimulate">Match simulator button</string>
     <string name="cd_Away_Team">Image of away team</string>
     <string name="cd_Home_Team">Image of home team</string>

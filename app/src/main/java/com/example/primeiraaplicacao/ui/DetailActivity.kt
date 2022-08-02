@@ -1,8 +1,7 @@
 package com.example.primeiraaplicacao.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toolbar
+import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.example.primeiraaplicacao.databinding.ActivityDetailBinding
 import com.example.primeiraaplicacao.domain.Match
@@ -21,7 +20,7 @@ class DetailActivity : AppCompatActivity() {
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
-        val displayHomeAsUpEnabled = supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         loadMatchFromExtra()
     }
@@ -35,14 +34,14 @@ class DetailActivity : AppCompatActivity() {
 
             Glide.with(this).load(it.homeTeam.image).into(binding.ivHomeTeam)
             binding.tvHomeTeamName.text = it.homeTeam.name
-            if(it.homeTeam.score != null) {
+            if (it.homeTeam.score != null) {
                 binding.tvHomeTeamScore.text = it.homeTeam.score.toString()
             }
             binding.rbHomeTeamStars.rating = it.homeTeam.stars.toFloat()
 
             Glide.with(this).load(it.awayTeam.image).into(binding.ivAwayTeam)
             binding.tvAwayTeamName.text = it.awayTeam.name
-            if(it.awayTeam.score != null) {
+            if (it.awayTeam.score != null) {
                 binding.tvAwayTeamScore.text = it.awayTeam.score.toString()
             }
             binding.rbAwayTeamStars.rating = it.awayTeam.stars.toFloat()

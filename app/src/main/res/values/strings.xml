@@ -4,4 +4,5 @@
     <string name="cd_Away_Team">Image of away team</string>
     <string name="cd_Home_Team">Image of home team</string>
     <string name="txt_Versus" translatable="false">X</string>
+    <string name="error_api">Unexpected error</string>
 </resources>

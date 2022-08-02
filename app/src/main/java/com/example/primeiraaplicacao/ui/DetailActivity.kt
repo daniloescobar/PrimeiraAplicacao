@@ -21,6 +21,7 @@ class DetailActivity : AppCompatActivity() {
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
+        val displayHomeAsUpEnabled = supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         loadMatchFromExtra()
     }
